@@ -95,4 +95,60 @@ A music player app from scratch.
    }
    ```
 
-   ​
+10. Setup `html-webpack-plugin` to automatically generate html and add script to it.
+
+   ```shell
+   yarn add html-webpack-plugin
+   ```
+
+11. Update `webpack.config.js`
+
+    ```diff
+    diff --git a/webpack.config.js b/webpack.config.js
+    index cab0632..f1c94fb 100644
+    --- a/webpack.config.js
+    +++ b/webpack.config.js
+    @@ -1,4 +1,12 @@
+     const path = require('path');
+    +const HtmlWebpackPlugin = require('html-webpack-plugin');
+    +
+    +const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
+    +  template: './client/index.html',
+    +  filename: 'index.html',
+    +  inject: 'body'
+    +});
+    +
+     module.exports = {
+       entry: './client/index.js',
+       output: {
+    @@ -6,9 +14,17 @@ module.exports = {
+         filename: 'index_bundle.js'
+       },
+       module: {
+    -    loaders: [
+    -      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
+    -      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
+    +    loaders: [{
+    +        test: /\.js$/,
+    +        loader: 'babel-loader',
+    +        exclude: /node_modules/
+    +      },
+    +      {
+    +        test: /\.jsx$/,
+    +        loader: 'babel-loader',
+    +        exclude: /node_modules/
+    +      }
+         ]
+    -  }
+    -}
+    \ No newline at end of file
+    +  },
+    +  plugins: [HtmlWebpackPluginConfig]
+    +};
+    \ No newline at end of file
+
+    ```
+
+    We require the `html-webpack-plugin`. Create an instance of it, and set our skeleton HTML as the `template`. `filename` refers to the name of the HTML that the plugin will generate. `inject` body tells the plugin to add any JavaScript into the bottom of the page, before the closing `body` tag.
+
+    ​
