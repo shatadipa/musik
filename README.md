@@ -151,4 +151,28 @@ A music player app from scratch.
 
     We require the `html-webpack-plugin`. Create an instance of it, and set our skeleton HTML as the `template`. `filename` refers to the name of the HTML that the plugin will generate. `inject` body tells the plugin to add any JavaScript into the bottom of the page, before the closing `body` tag.
 
+12. Add a start script
+
+    ```diff
+    diff --git a/package.json b/package.json
+    index 8d59e7b..4b10ba1 100644
+    --- a/package.json
+    +++ b/package.json
+    @@ -17,5 +17,8 @@
+         "babel-loader": "^7.1.2",
+         "babel-preset-es2015": "^6.24.1",
+         "babel-preset-react": "^6.24.1"
+    +  },
+    +  "scripts": {
+    +    "start": "webpack-dev-server"
+       }
+     }
+    ```
+
+13. Run the app and see it running.
+
+    ```shell
+    yarn start
+    ```
+
     ​
