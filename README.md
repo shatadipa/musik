@@ -97,9 +97,9 @@ A music player app from scratch.
 
 10. Setup `html-webpack-plugin` to automatically generate html and add script to it.
 
-   ```shell
-   yarn add html-webpack-plugin
-   ```
+  ```shell
+  yarn add html-webpack-plugin
+  ```
 
 11. Update `webpack.config.js`
 
@@ -175,4 +175,9 @@ A music player app from scratch.
     yarn start
     ```
 
-    ​
+14. Install React dependencies
+
+    ```shell
+    yarn add react react-dom
+    ```
+
