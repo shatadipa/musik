@@ -1,12 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-class App extends React.Component {
+export default class App extends React.Component {
   render() {
     return (
-        <div style="color:red">
-          <h1>musik</h1>
-        </div>
-      );
+     <div style={{textAlign: 'center'}}>
+        <h1>Hello World</h1>
+      </div>);
   }
 }
