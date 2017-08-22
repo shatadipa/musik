@@ -7,8 +7,8 @@ export default class Playlist extends React.Component {
     return (
       <ul className={[styles.playlist].join(' ')}>
           {
-            this.props.list.map(function (song) {
-              return <Song key={song.id} song={song}/>;
+            this.props.list.map(function (song, index) {
+              return <Song key={song.id} song={song} n={index}/>;
             })
           }
       </ul>
