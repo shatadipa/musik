@@ -1,0 +1,10 @@
+#playerBar {
+    position: fixed;
+    height: 60px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px; 
+    background-color: #fff;
+    border-top: 1px solid #efefef;
+}

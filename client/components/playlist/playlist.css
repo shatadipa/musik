@@ -1,0 +1,6 @@
+ul.playlist {
+    width: 90%;
+    margin: auto auto 80px auto;
+    list-style: none;
+    padding: 0;
+}
