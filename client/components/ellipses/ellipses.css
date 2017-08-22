@@ -1,3 +1,5 @@
 .ellipses {
-    margin-left: auto;
+    margin-left:10%;
+    transform: rotate(90deg);
+    font-weight: bold;
 }
