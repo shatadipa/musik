@@ -15,6 +15,10 @@ module.exports = {
   },
   module: {
     loaders: [
+      { 
+        test: /\.jpg$/, 
+        loader: "url-loader?mimetype=image/jpg" 
+      },      
       {
         test: /\.css$/,
         loader: 'style-loader'

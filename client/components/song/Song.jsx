@@ -7,10 +7,10 @@ export default class Song extends React.Component {
     return (
       <li className={styles.song}>
         <div>#1</div>
-        <AlbumArt />
+        <AlbumArt source={this.props.song.albumart}/>
         <div>{this.props.song.title}</div>
         <div>{this.props.song.duration}</div>
-        <div>Menu</div>
+        <div></div>
       </li>
     );
   }

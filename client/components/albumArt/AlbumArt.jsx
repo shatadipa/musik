@@ -4,8 +4,8 @@ import styles from './albumArt.css';
 export default class AlbumArt extends React.Component {
     render() {
         return (
-            <a>
-                <img src="" width="30" height="30"/>
+            <a className={styles.albumArt}>
+                <img src={this.props.source}/>
             </a>
         );
     }
