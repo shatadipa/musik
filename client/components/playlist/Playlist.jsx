@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './playlist.css';
-import Song from '../song/Song.jsx';
+import Song from './song/Song.jsx';
 
 export default class Playlist extends React.Component {
   render() {

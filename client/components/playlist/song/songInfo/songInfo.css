@@ -3,10 +3,6 @@
     flex-direction: column;
 }
 
-.songInfo div:nth-child(1) {
-    font-weight: bold;
-}
-
 .songInfo div:nth-child(2) {
     font-size: 12px;
     margin-top: 4px;

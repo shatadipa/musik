@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './song.css';
-import AlbumArt from '../albumArt/AlbumArt.jsx';
-import SongNumber from '../songNumber/SongNumber.jsx';
-import Ellipses from '../ellipses/Ellipses.jsx';
-import SongInfo from '../songInfo/SongInfo.jsx';
-import Duration from '../duration/Duration.jsx';
+import AlbumArt from './albumArt/AlbumArt.jsx';
+import SongNumber from './songNumber/SongNumber.jsx';
+import Ellipses from './ellipses/Ellipses.jsx';
+import SongInfo from './songInfo/SongInfo.jsx';
+import Duration from './duration/Duration.jsx';
 
 export default class Song extends React.Component {
   render() {
