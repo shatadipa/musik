@@ -6,6 +6,7 @@ export default class AlbumArt extends React.Component {
         return (
             <a className={styles.albumArt}>
                 <img src={this.props.source}/>
+                <div />
             </a>
         );
     }
