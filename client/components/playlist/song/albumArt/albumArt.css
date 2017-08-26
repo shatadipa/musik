@@ -1,7 +1,14 @@
 .albumArt {
     position: relative;
-    margin-right: 5%;
     height: 50px;
+}
+
+.rightMargin {
+    margin-right: 2%;
+}
+
+.leftMargin {
+    margin-left: 2%;
 }
 
 .albumArt img {

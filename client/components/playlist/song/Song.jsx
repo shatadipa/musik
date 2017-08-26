@@ -11,7 +11,7 @@ export default class Song extends React.Component {
     return (
       <li className={styles.song}>
         <SongNumber n={this.props.n}/>
-        <AlbumArt source={this.props.song.albumart}/>
+        <AlbumArt source={this.props.song.albumart} styles={['rightMargin', 'leftMargin']}/>
         <SongInfo song= {this.props.song}/>
         <Duration duration={this.props.song.duration} />
         <Ellipses />

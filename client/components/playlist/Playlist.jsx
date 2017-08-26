@@ -5,7 +5,7 @@ import Song from './song/Song.jsx';
 export default class Playlist extends React.Component {
   render() {
     return (
-      <ul className={[styles.playlist].join(' ')}>
+      <ul className={styles.playlist}>
           {
             this.props.list.map(function (song, index) {
               return <Song key={song.id} song={song} n={index}/>;
