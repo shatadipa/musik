@@ -10,7 +10,7 @@ export default class App extends React.Component {
     return (
       <section>
         <Header />
-        <Playlist list={songs} />
+        <Playlist songs={songs} />
         <PlayerBar song={songs[0]}/>
       </section>
     );

@@ -1,0 +1,36 @@
+.seekBar {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin-left:5%;
+}
+
+.seekBar .bar {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 80%;
+    height: 1px;
+    background-color: #ccc;
+    position: relative;
+}
+
+.seekBar .fill {
+    width: 60%;
+    height: 1px;
+    background-color: #333;
+}
+
+.seekBar .seek {
+    position: absolute;
+    left: 60%;
+    width: 11px;
+    top: -5px;
+    height: 11px;
+    background-color: #333;
+    border-radius: 50%;
+    transition: 0.1s ease-in;
+}
+
+.seekBar .btn:hover {
+    cursor: pointer;
+}

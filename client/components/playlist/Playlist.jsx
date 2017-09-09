@@ -7,7 +7,7 @@ export default class Playlist extends React.Component {
     return (
       <ul className={styles.playlist}>
           {
-            this.props.list.map(function (song, index) {
+            this.props.songs.map(function (song, index) {
               return <Song key={song.id} song={song} n={index}/>;
             })
           }
